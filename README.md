@@ -1,4 +1,6 @@
-# Markdown
- - 과제 : 나 자신을 소개하는 글을 마크다운 형식으로 작성하기
- - Emoji 활용해보기
- - git 구경 ~ Markdown 구경
+# 초보 개발자의 개발 뿌수기!
+> 초보 개발자가 되기 위한 걸음마 과정을 학습하는 공간입니다. :grin:   
+> 블로그는 여기 :point_right: <https://blog.naver.com/applyzz99>
+### 사용언어
+1. JAVA   
+2. .
