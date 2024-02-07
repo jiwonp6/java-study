@@ -6,7 +6,7 @@ public class Type7 {
         String s1 = "600000";
         int i = Integer.parseInt(s1);
         double d1 = Double.parseDouble("3.14");
-        boolean b = Boolean.parseBoolean(true);
+        boolean b = Boolean.parseBoolean("true");
         
         // 기본타입 => 문자열 강제 변환
         String s = String.valueOf(100);
