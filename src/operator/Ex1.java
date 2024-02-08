@@ -17,7 +17,7 @@ public class Ex1 {
         int num2;
 
         // 입력받기
-//        System.out.println("두 개의 정수를 입력해 주세요.");
+        System.out.println("두 개의 정수를 입력해 주세요.");
 
         Scanner scanner1 = new Scanner(System.in);
         num1 = scanner1.nextInt();   // 입력받은 타입을 정수로 변환
@@ -30,6 +30,7 @@ public class Ex1 {
         System.out.println("num1 - num2 = " + (num1 - num2));
         System.out.println("num1 * num2 = " + (num1 * num2));
         System.out.println("num1 / num2 = " + ((double)num1 / num2));
+        System.out.println("num1 % num2 = " + (num1 % num2));
 
     }
 }

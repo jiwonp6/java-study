@@ -30,11 +30,5 @@ public class Ex8 {
         result = (num1 >= num2) ? num1 : num2;
         System.out.printf("%s와 %s중 더 큰 수는 %s입니다.", num1, num2, result);
 
-
-
-
-
-
-
     }
 }

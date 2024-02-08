@@ -17,6 +17,8 @@ public class Ex5 {
         // pi값 문자열로 만들고 숫자로 변환
         String pi = (var2 + "." + var3);
         double varPi = Double.parseDouble(pi);
+        
+        // 계산
         double var4 = var1 * var1 * varPi;
 
         // 출력

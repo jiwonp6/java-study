@@ -14,8 +14,9 @@ public class Ex4 {
 
         // 넓이 계산
         double area = (((lengthTop + lengthBottom) * (double)height)/2 );
-        
+        // = double area = (((lengthTop + lengthBottom) * height)/2.0 );
+
         // 출력
-        System.out.printf("사다리꼴의 넓이는 %s입니다.", area);
+        System.out.printf("사다리꼴의 넓이는 %.2f입니다.", area);
     }
 }
