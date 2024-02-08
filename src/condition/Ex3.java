@@ -18,8 +18,8 @@ public class Ex3 {
         // 변수 설정
         int time;
         int parkingFee;
-        int first2Hs = 5000;
-        int nextMins = 1000;
+        int first2HsFee = 5000;
+        int nextMinsFee = 1000;
 
         // 변수 입력받기
         System.out.println("주차장 사용시간을 입력해주세요.");
@@ -30,7 +30,8 @@ public class Ex3 {
         if(time >=0 && time <= 2){
             System.out.println("주차 요금은 5000원입니다.");
         } else if (time > 2){
-            parkingFee = (first2Hs + ((time - 2) * 2 * nextMins));
+            int nextMins = (time - 2) * 60 ;
+            parkingFee = (first2HsFee + (nextMins/30 * nextMinsFee));
             System.out.printf("주차 요금은 %s원입니다.", parkingFee);
         } else {
             System.out.println("잘못 입력하셨습니다.");
