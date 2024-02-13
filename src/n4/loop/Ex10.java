@@ -46,7 +46,7 @@ public class Ex10 {
                     totMoney += deposit;
                     System.out.println("예금액 : " + deposit + "원");
                     System.out.println("잔액 : " + totMoney + "원");
-                    continue;
+                    break;
                 case 2 :
                     System.out.println("출금액을 입력해주세요");
                     withdraw = scanner.nextInt();
@@ -59,13 +59,14 @@ public class Ex10 {
                         System.out.println("잔액 : " + totMoney + "원");
                         System.out.println("잔고 부족으로 출금 불가합니다.");
                     }
-                    continue;
+                    break;
                 case 3 :
                     System.out.println("잔고 : " + totMoney + "원");
-                    continue;
+                    break;
                 case 4 :
                     System.out.println("프로그램 종료");
                     isRun = false;
+                    break;
 
             }
 
