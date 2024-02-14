@@ -1,8 +1,8 @@
 package ch4_loop;
+// #5-20  연습문제 - 은행 앱(2024-02-13)
 
 import java.util.Scanner;
 
-// #5-20  연습문제 - 은행 앱(2024-02-13)
 public class Ex10 {
     public static void main(String[] args) {
         /*
