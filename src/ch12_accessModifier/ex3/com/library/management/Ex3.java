@@ -60,7 +60,6 @@ public class Ex3 {
         // 책 리스트 출력
         library.listBooks();
 
-
     }
 
 }
