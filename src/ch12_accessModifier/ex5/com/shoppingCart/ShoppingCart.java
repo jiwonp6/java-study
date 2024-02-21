@@ -15,7 +15,7 @@ public class ShoppingCart {
     /* 메소드 */
     // 상품 넣기
     public void addItem(Item item){
-        if (index < 10){
+        if (index < 9){
             items[index] = item;
             index++;
             System.out.println("상품 추가 완료");
@@ -27,8 +27,18 @@ public class ShoppingCart {
     // 장바구니 목록 출력
     public void displayItems(){
         for (int i = 0; i < index; i++) {
-            System.out.println("상품명 : " + items[i].name + ", 상품가격 : " + items[i].price + ", 수량 : " + items[i].quantity);
+            System.out.println("상품명 : " + items[i].getName() + ", 상품가격 : " + items[i].getPrice()
+                    + ", 수량 : " + items[i].getQuantity() + ", 합계 : " + items[i].getTotal());
 
         }
+    }
+
+    // 전체 합계
+    public void calculateSum(){
+        long tot = 0;
+        for (int i = 0; i < index; i++) {
+            tot += items[i].getTotal();
+        }
+        System.out.println("전체가격 : " + tot);
     }
 }

@@ -13,22 +13,12 @@ public class Ex5 {
 
         메인 메소드로 실행할 경우 다음과 같은 결과를 출력합니다.
 
-        public static void main(String[] args) {
-            ShoppingCart cart = new ShoppingCart();
-            Item item1 = new Item("당근", 1500, 3);
-            Item item2 = new Item("양파", 2000, 5);
-            cart.addItem(item1);
-            cart.addItem(item2);
-            cart.displayItems();
-        }
-
         실행결과
         ===
         장바구니 상품 출력
         상품명:당근, 합계:4500
         상품명:양파, 합계:10000
         전체 가격 합:14500
-
 
         Hint
         ===
@@ -42,6 +32,6 @@ public class Ex5 {
         cart.addItem(item1);
         cart.addItem(item2);
         cart.displayItems();
-
+        cart.calculateSum();
     }
 }
