@@ -1,0 +1,5 @@
+package ch17_polymorphism.ex2;
+
+public abstract class Transport {
+    public abstract void move();
+}
