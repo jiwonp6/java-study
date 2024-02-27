@@ -1,4 +1,4 @@
-package ch17_polymorphism.abstraction;
+package ch17_polymorphism.abstraction1;
 // #16 추상화 (2024-02-26)
 public class Cat extends Animal {
     @Override

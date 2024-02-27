@@ -1,4 +1,4 @@
-package ch17_polymorphism.abstraction;
+package ch17_polymorphism.abstraction1;
 // #16 추상화 (2024-02-26)
 
 // 추상 클래스 : 부모 클래스는 제공하지만 실제 생성되면 안되는 클래스
