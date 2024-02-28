@@ -3,7 +3,7 @@ package ch18_interface.ex3;
 public class Mage extends Character implements Attackable{
     // 생성자
     public Mage(String name) {
-        super.name = name;
+        super(name);
     }
     @Override
     public void attack(Character character) {

@@ -3,7 +3,7 @@ package ch18_interface.ex3;
 public class Warrior extends Character implements Attackable{
     // 생성자
     public Warrior(String name) {
-        super.name = name;
+        super(name);
     }
 
     @Override
