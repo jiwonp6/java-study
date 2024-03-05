@@ -1,13 +1,6 @@
-package ch22_library.lang;
+package ch22_library.lang.lang2_toString;
 
-public class Lang2_ToString {
-    public static void main(String[] args) {
-        Product product1 = new Product("바나나", 5000, "과일");
-        System.out.println(product1);
-    }
-}
-
-class Product{
+public class Product{
     private String productName;
     private long price;
     private String category;
