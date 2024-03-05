@@ -1,4 +1,4 @@
-package ch22_library.lang.clone;
+package ch22_library.lang.lang6_clone;
 
 public class Clone {
     public static void main(String[] args) {

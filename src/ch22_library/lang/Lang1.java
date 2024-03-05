@@ -1,6 +1,6 @@
 package ch22_library.lang;
 // # 22 library (240305)
-public class JavaLang1 {
+public class Lang1 {
     // java.base 모듈
     // java.lang 패키지
     // 자바 프로그래밍 언어의 기본 클래스들을 포함하고 있고,

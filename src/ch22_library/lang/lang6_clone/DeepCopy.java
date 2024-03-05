@@ -1,4 +1,4 @@
-package ch22_library.lang.clone;
+package ch22_library.lang.lang6_clone;
 
 // 깊은 복사
 public class DeepCopy implements Cloneable{

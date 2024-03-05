@@ -2,16 +2,16 @@ package ch22_library.lang;
 
 import java.util.HashMap;
 
-public class Key {
+public class Lang5_Key {
     public static void main(String[] args) {
         // key 타입을 식별키로 사용하여 문자열 값을 저장하는 hashMap 자료구조
-        HashMap<Key, String> hashMap = new HashMap<>();
+        HashMap<Lang5_Key, String> hashMap = new HashMap<>();
 
         // 식별키 새로 생성하여 값을 저장
-        hashMap.put(new Key(1), "홍길동");
+        hashMap.put(new Lang5_Key(1), "홍길동");
 
         // 새로운 식별키(num 같음) 값을 가져옴
-        String value = hashMap.get(new Key(1));     // 메모리 주소 기반 비교 X
+        String value = hashMap.get(new Lang5_Key(1));     // 메모리 주소 기반 비교 X
 
         System.out.println(value);      // 홍길동
     }
@@ -21,7 +21,7 @@ public class Key {
     int num;
 
     // 생성자
-    public Key(int num) {
+    public Lang5_Key(int num) {
         this.num = num;
     }
 
@@ -30,7 +30,7 @@ public class Key {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Key key = (Key) o;
+        Lang5_Key key = (Lang5_Key) o;
         return num == key.num;
     }
 

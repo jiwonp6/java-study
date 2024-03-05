@@ -1,4 +1,4 @@
-package ch22_library.lang.clone;
+package ch22_library.lang.lang6_clone;
 
 // 얕은 복사 (Clone 은 기본적으로 얕은 복사)
 public class ShallowCopy implements Cloneable{
