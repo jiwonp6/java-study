@@ -1,6 +1,6 @@
 package ch22_library.lang;
 
-public class Equals {
+public class Lang3_Equals {
     // Object 클래스의 equals 메소드는 객체의 동등성을 비교하는데 사용
     // 기본 구현 값은 this == obj (실제로 같은 객체인지 비교)
     // 오버라이딩을 통해 논리적 동등성을 구현할 수 있다.

@@ -1,6 +1,6 @@
 package ch22_library.lang;
 
-public class ToString {
+public class Lang2_ToString {
     public static void main(String[] args) {
         Product product1 = new Product("바나나", 5000, "과일");
         System.out.println(product1);

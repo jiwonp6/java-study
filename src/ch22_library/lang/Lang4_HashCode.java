@@ -2,7 +2,7 @@ package ch22_library.lang;
 
 import java.util.Objects;
 
-public class HashCode {
+public class Lang4_HashCode {
     public static void main(String[] args) {
         // Object 클래스의 hashcode
             // : 기본적으로 메모리 주소를 기반으로 한 정수값을 가짐.
