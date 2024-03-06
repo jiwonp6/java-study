@@ -1,4 +1,4 @@
-package ch22_library.lang.lang4;
+package ch22_library.lang.lang4_hashCode;
 
 import java.util.Objects;
 

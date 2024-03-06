@@ -1,4 +1,4 @@
-package ch22_library.ex2;
+package ch22_library.ex.ex2;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package ch22_library.lang.lang5;
+package ch22_library.lang.lang5_hashMap;
 
 import java.util.HashMap;
 

@@ -1,0 +1,29 @@
+package ch22_library.ex;
+
+public class Ex8 {
+    /*
+        <프로그램 종료 상태 코드 설정>
+
+        요구사항:
+        프로그램에 전달된 인자(argument)의 개수에 따라 다른 종료 코드를 반환하는 프로그램을 작성하세요.
+        인자가 없으면 상태 코드 0을 반환하고 프로그램을 종료합니다.
+        인자가 하나 이상 있으면 상태 코드 1을 반환하고 프로그램을 종료합니다.
+        System.exit(int status) 메소드를 사용하여 상태 코드를 설정하세요.
+     */
+    public static void main(String[] args) {
+        int argumentNum = 0;
+
+        for (int i = 0; i < args.length; i++) {
+            System.out.print(args[i] + "\t");
+            argumentNum++;
+        }
+        System.out.println(" ");
+
+        if (argumentNum > 0){
+            System.out.println("argument 개수 : " + argumentNum);
+            System.exit(0);
+        } else {
+            System.exit(1);
+        }
+    }
+}
