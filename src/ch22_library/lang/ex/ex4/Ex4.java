@@ -1,4 +1,4 @@
-package ch22_library.ex.ex4;
+package ch22_library.lang.ex.ex4;
 
 public class Ex4 {
     /*

@@ -1,4 +1,4 @@
-package ch22_library.lang.lang9_classClass;
+package ch22_library.lang.lang9_class;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -57,7 +57,7 @@ public class ClassClass {
         arrayList.add("a");
         // arrList.add("a"); <--- 일반적인 방법으로는 호출불가
         Method addMethod = arrayListClass.getMethod("add", Object.class);   // 동적 호출 방법 사용
-        addMethod.invoke(arrList, "add");   // 메소드를 Class 리플렉션(Object)에서 뽑아낸 Method 리플렉션(addMethod)에서 강제로 호출
+        addMethod.invoke(arrList, "add");   // 메소드를 Class 리플렉션(Object)에서 뽑아낸 Method 리플렉션(addMethod)으로 강제로 호출
 
         /*
             <Reflection 주의사항>
