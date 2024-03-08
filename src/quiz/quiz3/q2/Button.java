@@ -1,21 +1,17 @@
 package quiz.quiz3.q2;
 
-public class Button implements OnClickListener{
-    OnClickListener onClickListener;
+public class Button {
+    private ch20_nested.ex.ex2.OnClickListener listener;
 
-    // 메소드
-    public void setOnClickListener(OnClickListener listener){
-
+    public void setOnClickListener(ch20_nested.ex.ex2.OnClickListener listener) {
+        this.listener = listener;
     }
 
-    void click(OnClickListener listener){
-//        if (!listener){
-//
-//        }
-    }
-
-    @Override
-    public void onClick() {
-        System.out.println("버튼이 클릭되었습니다.");
+    public void click() {
+        // null일 때 예외처리
+        if (listener == null) {
+            return;
+        }
+        listener.onClick();
     }
 }

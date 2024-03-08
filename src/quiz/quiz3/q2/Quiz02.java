@@ -1,6 +1,6 @@
 package quiz.quiz3.q2;
 
-import ch20_nested.nested2.ClickFrame;
+import ch20_nested.ex.ex2.OnClickListener;
 
 public class Quiz02 {
     /*
@@ -26,7 +26,16 @@ public class Quiz02 {
      */
     public static void main(String[] args) {
         Button button = new Button();
-        button.setOnClickListener(button.onClickListener);
+
+        button.click();
+
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick() {
+                System.out.println("버튼이 클릭되었습니다.");
+            }
+        });
+        button.click();
     }
 
 }
