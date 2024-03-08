@@ -26,22 +26,18 @@ public class Ex3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("원금 : ");
-        BigDecimal principal = new BigDecimal(scanner.nextInt());
+        BigDecimal principal = scanner.nextBigDecimal();
 
         System.out.println("연이율 : ");
-        BigDecimal annualInterestRate = new BigDecimal(scanner.nextDouble());
+        BigDecimal annualInterestRate = scanner.nextBigDecimal();
 
-        System.out.println("기간 : ");
+        System.out.println("기간(년) : ");
         int termInYears = scanner.nextInt();
-
-        System.out.println(principal);
-        System.out.println(annualInterestRate);
-        System.out.println(termInYears);
 
         BigDecimal num = BigDecimal.ONE.add(annualInterestRate);
         BigDecimal pow = num.pow(termInYears);
         BigDecimal amount = pow.multiply(principal);
 
-        System.out.println(amount);
+        System.out.printf("최종금액 : %.2f원", amount);
     }
 }

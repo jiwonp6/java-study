@@ -55,7 +55,5 @@ public class BigNumber {
 
         // 금융계산이나 과학계산에 필요한 고정밀도 연산에 쓰임
 
-
-
     }
 }
