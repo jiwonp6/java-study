@@ -1,0 +1,13 @@
+package ch24_generic.wildcard2;
+
+public class HorseShop {
+    void addPremium(Horse<? extends Knight> horse){
+        System.out.println("프리미엄 말로 추가 : " + horse);
+    }
+    void addEntry(Horse<? super Knight> horse){
+        System.out.println("보급형 말로 추가 : " + horse);
+    }
+    void addBestSeller(Horse<? extends Unit> horse){
+        System.out.println("베스트셀러 말로 추가 : " + horse);
+    }
+}

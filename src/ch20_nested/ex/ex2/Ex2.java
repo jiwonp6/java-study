@@ -13,7 +13,7 @@ public class Ex2 {
 
         button.click(); // 클릭 리스너가 없는경우 NPE
 
-        button.setOnClickListener(new OnClickListener() {
+        button.setOnClickListener(new OnClickListener() {   // 익명 객체
             @Override
             public void onClick() {
                 System.out.println("버튼이 클릭되었습니다.");
