@@ -1,8 +1,7 @@
-package ch25_collection.ex5;
+package ch25_collection.list.ex5;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class VottingSystem {
     /*
@@ -15,36 +14,39 @@ public class VottingSystem {
              - 잘못된 번호를 입력받으면 오류 메시지를 출력하고 다시 입력을 요청합니다.
          - printVotingResult() 메서드에서 최종 투표 결과를 출력합니다.
      */
-    private List<Candidate> candidateList = new ArrayList<>();
-    private Scanner scanner = new Scanner(System.in);
+    // 필드
+    // 후보 정보 가지고 있는 List
+    private List<Candidate> candidates = new ArrayList<>();
 
+    // 생성자
     // 후보 삽입
     public void addCandidate(){
-        candidateList.add(new Candidate("고길동"));
-        candidateList.add(new Candidate("둘리"));
-        candidateList.add(new Candidate("마이콜"));
-        candidateList.add(new Candidate("희동이"));
+        candidates.add(new Candidate("고길동"));
+        candidates.add(new Candidate("둘리"));
+        candidates.add(new Candidate("마이콜"));
+        candidates.add(new Candidate("희동이"));
     }
 
+    // 메소드
     // 후보 목록 출력
     public void printAllCandidate(){
         System.out.println("<후보 목록>");
-        for (int i = 0; i < candidateList.size(); i++) {
-            System.out.print((i+1) + ". " + candidateList.get(i).getName() + "\t");
+        for (int i = 0; i < candidates.size(); i++) {
+            System.out.print((i+1) + ". " + candidates.get(i).getName() + "\t");
         }
         System.out.println(" ");
     }
 
     // 투표
     public void startVoting(int i){
-        candidateList.get(i).receiveVote();
+        candidates.get(i).receiveVote();
     }
 
     // 투표 결과 출력
     public void printVotingResult(){
         System.out.println("<투표 결과>");
-        for (int i = 0; i < candidateList.size(); i++) {
-            System.out.print(candidateList.get(i).toString());
+        for (Candidate candidate : candidates) {
+            System.out.print(candidate.toString());
         }
     }
 }

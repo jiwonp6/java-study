@@ -1,9 +1,5 @@
-package ch25_collection.ex5;
+package ch25_collection.list.ex5;
 
-import ch25_collection.ex4.AddressBook;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Ex5 {

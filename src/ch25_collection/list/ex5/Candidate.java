@@ -1,4 +1,4 @@
-package ch25_collection.ex5;
+package ch25_collection.list.ex5;
 
 public class Candidate {
     /*

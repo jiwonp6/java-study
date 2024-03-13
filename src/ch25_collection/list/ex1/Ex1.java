@@ -1,4 +1,4 @@
-package ch25_collection.ex1;
+package ch25_collection.list.ex1;
 
 import java.util.ArrayList;
 import java.util.List;

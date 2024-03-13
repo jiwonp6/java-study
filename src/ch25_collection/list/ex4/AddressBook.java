@@ -1,4 +1,4 @@
-package ch25_collection.ex4;
+package ch25_collection.list.ex4;
 
 import java.util.ArrayList;
 import java.util.Iterator;

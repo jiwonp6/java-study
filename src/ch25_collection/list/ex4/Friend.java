@@ -1,4 +1,4 @@
-package ch25_collection.ex4;
+package ch25_collection.list.ex4;
 
 public class Friend {
     // 필드

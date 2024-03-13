@@ -1,14 +1,14 @@
-package ch25_collection.ex1;
+package ch25_collection.list.ex1;
 
-public class Movie implements Media{
+public class Book implements Media{
     // 필드
     private String title;
-    private String director;
+    private String author;
 
     // 생성자
-    public Movie(String title, String director) {
+    public Book(String title, String author) {
         this.title = title;
-        this.director = director;
+        this.author = author;
     }
 
     // 오버라이드
@@ -16,8 +16,10 @@ public class Movie implements Media{
     public String getTitle() {
         return title;
     }
+
     @Override
     public String getDetail() {
-        return "Director : " + director;
+        return "Author : " + author;
     }
+
 }
