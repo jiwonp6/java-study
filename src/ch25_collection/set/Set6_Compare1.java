@@ -1,7 +1,7 @@
 package ch25_collection.set;
 
 import java.util.TreeSet;
-public class Set6_Compare {
+public class Set6_Compare1 {
     // Comparable 인터페이스     <- java.lang 패키지
     // Comparable 을 구현하는 클래스의 객체들은 자연스러운 순서로 정렬될 수 있음.
     // 단 하나의 추상 메소드

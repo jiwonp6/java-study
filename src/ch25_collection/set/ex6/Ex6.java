@@ -1,6 +1,7 @@
 package ch25_collection.set.ex6;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.TreeSet;
 
 public class Ex6 {
@@ -38,17 +39,22 @@ public class Ex6 {
         "예약 시간: 2023-10-11T10:00, 회의실, 홍길남"
      */
     public static void main(String[] args) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 HH시 mm분 시작");
+
         Reservation reservation1 = new Reservation(
-                LocalDateTime.of(2023, 10, 10, 12, 00), "김길동", "회의실1");
+                LocalDateTime.parse("2023년 10월 10일 12시 00분 시작", formatter), "홍길동", "회의실1");
         Reservation reservation2 = new Reservation(
-                LocalDateTime.of(2023, 10, 10, 10, 00), "홍길동", "회의실2");
+                LocalDateTime.parse("2023년 10월 10일 10시 00분 시작", formatter), "김길동", "회의실2");
         Reservation reservation3 = new Reservation(
-                LocalDateTime.of(2023, 10, 11, 12, 00), "임꺽정", "회의실3");
+                LocalDateTime.parse("2023년 10월 11일 10시 00분 시작", formatter), "홍길남", "회의실3");
+        Reservation reservation4 = new Reservation(
+                LocalDateTime.parse("2023년 10월 10일 15시 00분 시작", formatter), "홍길서", "회의실1");
 
         TreeSet<Reservation> reservations = new TreeSet<>();
         reservations.add(reservation1);
         reservations.add(reservation2);
         reservations.add(reservation3);
+        reservations.add(reservation4);
 
         for (Reservation reservation : reservations) {
             System.out.println(reservation.toString());
