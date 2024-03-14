@@ -1,9 +1,9 @@
-package ch25_collection.set;
+package ch25_collection.set.compare;
 
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class Set6_Compare2 {
+public class Compare2 {
     // Comparator 인터페이스     <- java.util 패키지
     static class Person {
         String name;

@@ -1,14 +1,14 @@
-package ch25_collection.set;
+package ch25_collection.set.compare;
 
 import java.util.TreeSet;
 
-public class Set7_Compare3 implements Comparable<Set7_Compare3>{
+public class Compare3 implements Comparable<Compare3>{
     // 필드 (Person)
     private String name;
     private int age;
 
     // 생성자
-    public Set7_Compare3(String name, int age) {
+    public Compare3(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -19,7 +19,7 @@ public class Set7_Compare3 implements Comparable<Set7_Compare3>{
     }
 
     @Override
-    public int compareTo(Set7_Compare3 other) {
+    public int compareTo(Compare3 other) {
         // 나이 기준으로 정수 비교 : 음수, 0, 양수
         int ageCompared = Integer.compare(this.age, other.age);
 
@@ -34,16 +34,16 @@ public class Set7_Compare3 implements Comparable<Set7_Compare3>{
     }
 
     public static void main(String[] args) {
-        TreeSet<Set7_Compare3> personTreeSet = new TreeSet<>();
+        TreeSet<Compare3> personTreeSet = new TreeSet<>();
 
-        personTreeSet.add(new Set7_Compare3("홍길동", 50));
-        personTreeSet.add(new Set7_Compare3("김길동", 30));
-        personTreeSet.add(new Set7_Compare3("나길동", 30));
-        personTreeSet.add(new Set7_Compare3("다길동", 30));
-        personTreeSet.add(new Set7_Compare3("박길동", 20));
-        personTreeSet.add(new Set7_Compare3("이길동", 20));
+        personTreeSet.add(new Compare3("홍길동", 50));
+        personTreeSet.add(new Compare3("김길동", 30));
+        personTreeSet.add(new Compare3("나길동", 30));
+        personTreeSet.add(new Compare3("다길동", 30));
+        personTreeSet.add(new Compare3("박길동", 20));
+        personTreeSet.add(new Compare3("이길동", 20));
 
-        for (Set7_Compare3 set7Compare3 : personTreeSet) {
+        for (Compare3 set7Compare3 : personTreeSet) {
             System.out.println(set7Compare3.toString());
         }
     }
