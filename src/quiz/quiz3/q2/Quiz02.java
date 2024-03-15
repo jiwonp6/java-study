@@ -1,7 +1,5 @@
 package quiz.quiz3.q2;
 
-import ch20_nested.ex.ex2.OnClickListener;
-
 public class Quiz02 {
     /*
         <사용자 정의 이벤트 리스너 구현하기>
