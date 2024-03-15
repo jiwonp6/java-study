@@ -1,8 +1,5 @@
 package ch25_collection;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
@@ -27,8 +24,10 @@ public class Ex3 {
         현재 페이지: www.example.com/contact
         이전 페이지로 돌아갑니다: www.example.com/about
      */
+
     public static void main(String[] args) {
         Stack<String> page = new Stack<>();
+
         page.push("www.example.com");
         page.push("www.example.com/about");
         page.push("www.example.com/contact");
@@ -47,6 +46,6 @@ public class Ex3 {
         } catch (EmptyStackException e) {
             System.out.println("마지막 페이지입니다.");
         }
-
     }
+
 }
