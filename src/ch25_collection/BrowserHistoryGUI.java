@@ -15,7 +15,6 @@ public class BrowserHistoryGUI extends JFrame {
         history.push("www.example.com/about");
         history.push("www.example.com/contact");
 
-
         this.setTitle("스택으로 구현한 뒤로가기 버튼");
         this.setSize(400, 200);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
