@@ -28,7 +28,9 @@ public class Ex6 {
         );
 
         products.stream()
-                .sorted(Comparator.comparing(Product::getReviews).thenComparing(Product::getPrice).reversed())
+                .sorted(Comparator.comparing(Product::getReviews)
+                                  .reversed()
+                                  .thenComparing(Product::getPrice))
                 .forEach(System.out::println);
 
     }
