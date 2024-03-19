@@ -1,8 +1,5 @@
 package ch26_lambda.ex;
 
-import java.time.LocalDate;
-import java.time.Period;
-import java.util.Date;
 import java.util.function.Function;
 
 public class Ex3 {

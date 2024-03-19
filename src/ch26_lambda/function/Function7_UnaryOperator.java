@@ -1,8 +1,6 @@
 package ch26_lambda.function;
 
-import java.util.function.BiPredicate;
 import java.util.function.BinaryOperator;
-import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 public class Function7_UnaryOperator {

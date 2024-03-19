@@ -1,9 +1,5 @@
 package ch26_lambda.ex;
 
-import javax.swing.text.DateFormatter;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.function.Function;
 
 public class Ex2 {
