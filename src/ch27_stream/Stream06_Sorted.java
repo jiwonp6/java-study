@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Stream6_Sorted {
+public class Stream06_Sorted {
     // 요소 정렬
     public static void main(String[] args) {
         List<Student> studentList = new ArrayList<>();

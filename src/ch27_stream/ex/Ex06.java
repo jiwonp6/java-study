@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Ex6 {
+public class Ex06 {
     /*
         <상품 가격과 리뷰 정렬>
         온라인 상점의 상품들의 리스트가 있습니다.

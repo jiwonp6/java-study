@@ -3,7 +3,7 @@ package ch27_stream.ex;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ex2 {
+public class Ex02 {
     /*
         <숫자 게임 점수 변환>
         주어진 정수 리스트에서 양수만 필터링한 후, 각 숫자의 제곱근을 구하여 결과를 출력하세요.

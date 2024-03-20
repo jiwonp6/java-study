@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
-public class Ex9 {
+public class Ex09 {
     /*
         <도서관 책 대여 기록 분석>
         도서관의 책 대여 기록이 있습니다.

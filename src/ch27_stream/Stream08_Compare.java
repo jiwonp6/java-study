@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Stream8_Compare {
+public class Stream08_Compare {
     public static void main(String[] args) {
         // Comparator 인터페이스의 디폴트 메소드 사용
         // Comparator.comparing(클래스명::필드명)

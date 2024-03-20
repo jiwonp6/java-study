@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class Ex8 {
+public class Ex08 {
     /*
         <온라인 도서관 시스템>
         온라인 도서관 시스템에서 사용자들이 대출한 책 목록을 관리하고 있습니다.

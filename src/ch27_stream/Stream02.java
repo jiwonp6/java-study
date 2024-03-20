@@ -9,7 +9,7 @@ import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class Stream2 {
+public class Stream02 {
     // 리소스(자원)으로부터 스트림 얻기 (생성하기)
     public static void main(String[] args) {
         // 1. 스트림 생성 : 컬렉션 프레임워크로부터 얻기

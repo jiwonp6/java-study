@@ -2,7 +2,7 @@ package ch27_stream.ex;
 
 import java.util.Map;
 
-public class Ex4 {
+public class Ex04 {
     /*
         <영화 평점 요약>
         영화와 그에 대한 평점이 주어졌을 때, 평점이 8 이상인 영화의 이름을 추출하고,

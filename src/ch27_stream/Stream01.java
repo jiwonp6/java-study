@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Stream1 {
+public class Stream01 {
     public static void main(String[] args) {
         List<Integer> numberList = new ArrayList<>(
                 List.of(7, 2, 5, 3, 4, 6, 0, 9, 1)

@@ -3,7 +3,7 @@ package ch27_stream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stream3 {
+public class Stream03 {
     public static void main(String[] args) {
         // 스트림 파이프라인(PipeLine)
             // : 스트림은 하나 이상 연결되어서 중간 과정들이 계속 연결될 수 있음

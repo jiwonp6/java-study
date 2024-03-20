@@ -2,7 +2,7 @@ package ch27_stream;
 
 import java.util.stream.IntStream;
 
-public class Stream9_Peek {
+public class Stream09_Peek {
     // 스트림 요소 반복 looping
         // : 스트림 요소에 대해 지정한 작업을 반복해서 수행
         // 매개변수로 Consumer : return 값 X, 매개변수 O

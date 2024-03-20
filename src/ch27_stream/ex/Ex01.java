@@ -3,7 +3,7 @@ package ch27_stream.ex;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ex1 {
+public class Ex01 {
     /*
         <고양이 이름 필터링>
 

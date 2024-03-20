@@ -1,12 +1,10 @@
 package ch27_stream.ex;
 
-import ch27_stream.Student;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Ex7 {
+public class Ex07 {
     /*
         <영화 평점 기록 분석>
         영화 평점 정보가 담긴 리스트가 있습니다.

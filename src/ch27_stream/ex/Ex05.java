@@ -2,7 +2,7 @@ package ch27_stream.ex;
 
 import java.util.*;
 
-public class Ex5 {
+public class Ex05 {
     /*
         <여행 일정 관리>
         여러분은 여행 일정을 계획하고 있습니다.

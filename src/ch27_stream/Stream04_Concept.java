@@ -1,6 +1,6 @@
 package ch27_stream;
 
-public class Stream4_Concept {
+public class Stream04_Concept {
     // 중간연산, 최종연산
     public static void main(String[] args) {
         /*

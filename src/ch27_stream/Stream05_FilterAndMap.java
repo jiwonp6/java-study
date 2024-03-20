@@ -2,7 +2,7 @@ package ch27_stream;
 
 import java.util.stream.IntStream;
 
-public class Stream5_FilterAndMap {
+public class Stream05_FilterAndMap {
     public static void main(String[] args) {
         // filter : 데이터를 걸러냄
         System.out.println("<filter>");

@@ -3,7 +3,7 @@ package ch27_stream.ex;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ex3 {
+public class Ex03 {
     /*
         <알파벳 정렬>
         알파벳이 뒤죽박죽인 리스트가 있습니다.

@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Stream7_CollectAndJoining {
+public class Stream07_CollectAndJoining {
     // 스트림 요소 수집하기 collect()
     // 유연한 최종연산
     // Collector<T, A, R> collector
