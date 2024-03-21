@@ -1,13 +1,11 @@
 package ch27_stream;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class Stream07_CollectAndJoining {
+public class Stream07_Collect {
     // 스트림 요소 수집하기 collect()
     // 유연한 최종연산
     // Collector<T, A, R> collector
@@ -99,6 +97,28 @@ public class Stream07_CollectAndJoining {
 
         System.out.println("over70students = " + over70students);
         System.out.println("under70students = " + under70students);
+
+        // summarizing : 숫자 요소에 대한 요약 통계 제공
+        // 반환 값으로 SummaryStatistics 타입을 받아서 숫자에 관한 기본 통계들을 받을 수 있음.
+        // 기본타입
+        IntSummaryStatistics intSummaryStatistics = IntStream.rangeClosed(1, 100)
+                .summaryStatistics();
+
+        double average = intSummaryStatistics.getAverage();
+        int max = intSummaryStatistics.getMax();
+        int min = intSummaryStatistics.getMin();
+        long sum = intSummaryStatistics.getSum();
+        long count = intSummaryStatistics.getCount();
+
+        System.out.println("count = " + count);
+        System.out.println("min = " + min);
+        System.out.println("max = " + max);
+        System.out.println("average = " + average);
+        System.out.println("sum = " + sum);
+
+        // 객체 타입
+        IntSummaryStatistics collect = studentList.stream()
+                .collect(Collectors.summarizingInt(Student::getScore));
 
     }
 }

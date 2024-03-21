@@ -30,7 +30,7 @@ public class Ex12 {
 
         // 모든 직원의 총 급여 계산하기
         int sum = employees.stream()
-                .mapToInt(employee -> employee.salary())
+                .mapToInt(Employee::salary)
                 .sum();
         System.out.println("총 급여: " + sum);
 
@@ -39,9 +39,15 @@ public class Ex12 {
                 = employees.stream()
                             .collect(Collectors.groupingBy(Employee::role,
                                      Collectors.averagingDouble(Employee::salary)));
+        // 출력 방법 1
         for (Map.Entry<String, Double> entry : positionAvgSalary.entrySet()) {
             System.out.println(entry.getKey() + " 평균 급여: " + entry.getValue());
         }
+        // 출력 방법 2
+        positionAvgSalary.forEach(
+                (role, salaryAvg) ->
+                        System.out.printf("%s 평균 급여 : %.2f\n", role, salaryAvg)
+        );
 
     }
 }

@@ -32,9 +32,16 @@ public class Ex13 {
                 .collect(Collectors.groupingBy(CityPopulation::city,
                         Collectors.averagingDouble(CityPopulation::population)));
 
+        // 출력 방법 1
         for (Map.Entry<String, Double> entry : eachCityAvgPopulation.entrySet()) {
             System.out.printf("%s 평균 인구: %.0f명\n", entry.getKey(), entry.getValue());
         }
+
+        // 출력 방법 2
+        eachCityAvgPopulation.forEach(
+                (city, populationAvg) ->
+                        System.out.printf("%s 평균 인구: %.0f명\n", city, populationAvg)
+        );
 
     }
 }
