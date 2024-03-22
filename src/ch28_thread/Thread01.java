@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class Thread1 {
+public class Thread01 {
     public static void main(String[] args) {
         // 스레드 생성
             // : 스레드를 실행할 때는 반드시 run 이 아닌 start 사용

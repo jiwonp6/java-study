@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class Thread4_setName {
+public class Thread04_SetName {
     // 스레드에 이름 주기
     // getName, setName 등
     // 스레드가 생성될 때 이름 할당받음

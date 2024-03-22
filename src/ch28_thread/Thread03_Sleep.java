@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class Thread3_Sleep {
+public class Thread03_Sleep {
     // sleep 메소드
         // : 특정 시간 동안 스레드를 일시 정지
     // milli(1/1000)초

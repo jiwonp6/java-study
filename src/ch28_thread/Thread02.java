@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class Thread2 {
+public class Thread02 {
     public static void main(String[] args) {
         // 스레드 호출 (run/start)
         MyThread2 myThread= new MyThread2();
