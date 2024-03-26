@@ -3,7 +3,7 @@ package ch28_thread;
 import java.util.concurrent.*;
 import java.util.stream.IntStream;
 
-public class ThreadPool2 {
+public class Thread19_ThreadPool2 {
     public static void main(String[] args) {
         // 스레드풀에 스레드 갯수를 지정하여 생성
         ExecutorService executorService = Executors.newFixedThreadPool(5);

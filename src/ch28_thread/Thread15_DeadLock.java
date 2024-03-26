@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class DeadLock {
+public class Thread15_DeadLock {
     public static void main(String[] args) {
         // 자원 2개
         Object resource1 = new Object();

@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class DaemonThread {
+public class Thread17_DaemonThread {
     // 주 스레드의 작업을 돕는 보조적인 역할을 수행하는 스레드
     // 주 스레드가 종료되면 데몬 스레드는 자동으로 따라 종료됨.
     public static void main(String[] args) {

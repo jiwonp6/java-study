@@ -1,6 +1,6 @@
 package ch28_thread;
 
-public class DeadLock2 {
+public class Thread16_DeadLock2 {
     // 식사하는 철학자들 문제
     public static void main(String[] args) {
         // 포크 5개

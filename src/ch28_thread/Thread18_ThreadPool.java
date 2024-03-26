@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ThreadPool {
+public class Thread18_ThreadPool {
     /*
          스레드풀 : 재사용 가능한 스레드들의 집합
          필요할 때마다 스레드를 새로 생성하는 대신 이미 생성된 스레드를 재사용하여

@@ -3,7 +3,7 @@ package ch28_thread;
 import java.util.Arrays;
 import java.util.List;
 
-public class Thread14 {
+public class Thread14_CoffeeMachine {
     // 생산자 - 소비자 모델 : 디자인 패턴
     // 생산자 (Producer) : 데이터를 생성하고, 버퍼에 추가
                         // => 버퍼가 가득 차 있으면 대기
