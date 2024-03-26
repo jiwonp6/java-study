@@ -6,23 +6,25 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadPool {
-    // 스레드풀 : 재사용 가능한 스레드들의 집합
-    // 필요할 때마다 스레드를 새로 생성하는 대신 이미 생성된 스레드를 재사용하여
-    // 스레드 생성, 제거에 따른 오버헤드(간접비)를 줄이고 자원 관리 효율성 높임.
+    /*
+         스레드풀 : 재사용 가능한 스레드들의 집합
+         필요할 때마다 스레드를 새로 생성하는 대신 이미 생성된 스레드를 재사용하여
+         스레드 생성, 제거에 따른 오버헤드(간접비)를 줄이고 자원 관리 효율성 높임.
 
-    // 1. 스레드풀에 작업 처리 요청
-    // 2. 작업 큐에 대기
-    // 3. 각 스레드는 큐에서 작업을 가져와서 스레드 풀이 최대 개수만큼 처리
-    // 4. 결과를 전달하고, 다음 작업을 대기
+         1. 스레드풀에 작업 처리 요청
+         2. 작업 큐에 대기
+         3. 각 스레드는 큐에서 작업을 가져와서 스레드 풀이 최대 개수만큼 처리
+         4. 결과를 전달하고, 다음 작업을 대기
 
-    // java.util.concurrent
-    // ExecutorService 스레드 풀 관리와 실행을 위한 인터페이스
-    // ExecutorService 생성
-    // Executors.newFixedThreadPool : 초기 스레드 수 0개, 최대 n개 생성가능
+         java.util.concurrent
+         ExecutorService 스레드 풀 관리와 실행을 위한 인터페이스
+         ExecutorService 생성
+         Executors.newFixedThreadPool : 초기 스레드 수 0개, 최대 n개 생성가능
 
-    // 작업 처리
-    // execute : Runnable 을 작업 처리 큐에 저장 (리턴 값이 없음)
-    // submit : Callable 을 작업 처리 큐에 저장 (리턴 값이 있음. Future 타입)
+         작업 처리
+         execute : Runnable 을 작업 처리 큐에 저장 (리턴 값이 없음)
+         submit : Callable 을 작업 처리 큐에 저장 (리턴 값이 있음. Future 타입)
+     */
     public static void main(String[] args) {
         List<Email> emails = new ArrayList<>();
         for (int i = 0; i < 1000; i++) {
