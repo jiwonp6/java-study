@@ -1,4 +1,4 @@
-package ch29_io_stream.ex;
+package ch29_io_stream.ex_io_stream;
 
 import java.io.*;
 import java.util.Scanner;

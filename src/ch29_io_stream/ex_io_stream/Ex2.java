@@ -1,4 +1,4 @@
-package ch29_io_stream.ex;
+package ch29_io_stream.ex_io_stream;
 
 import java.io.*;
 
@@ -35,20 +35,20 @@ public class Ex2 {
      */
     public static void main(String[] args) {
         try {
-            int errorNum = 0;
+            int errorCount = 0;
             BufferedWriter bw = new BufferedWriter(new FileWriter("src/ch29_io_stream/files/errorLogs.log"));
             BufferedReader br = new BufferedReader(new FileReader("src/ch29_io_stream/files/server.log"));
 
             while (true) {
                 String line = br.readLine();    // 파일에서 한 줄씩 읽음
-                if (line == null) break;
+                if (line == null) break;        // 종료 조건
                 if (line.contains("ERROR")) {
-                    errorNum++;
+                    errorCount++;
                     bw.write(line);
                     bw.newLine();
                 }
             }
-            System.out.printf("분석 완료. 총 %d 개의 에러 로그를 찾았습니다.", errorNum);
+            System.out.printf("분석 완료. 총 %d 개의 에러 로그를 찾았습니다.", errorCount);
 
             bw.close();
             br.close();
