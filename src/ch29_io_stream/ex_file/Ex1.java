@@ -1,14 +1,7 @@
 package ch29_io_stream.ex_file;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.Serializable;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.*;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class Ex1 {
     /*
@@ -39,8 +32,13 @@ public class Ex1 {
         System.out.println("1: 정보저장, 2: 정보 조회");
         int choice = scanner.nextInt();
         scanner.nextLine();
+
+        String currentPath = "src/ch29_io_stream/ex_file/ex1_userFiles/";
+
+        // 정보저장
         switch (choice) {
             case 1:
+                // 정보 받기
                 System.out.print("이름 : ");
                 String name = scanner.nextLine();
                 System.out.print("이메일 : ");
@@ -48,36 +46,53 @@ public class Ex1 {
                 System.out.print("나이 : ");
                 int age = scanner.nextInt();
 
+                // 객체
                 User user = new User(name, email, age);
 
-                Path filePath = Paths.get("src/ch29_io_stream/ex_file/ex1_userFiles").resolve(name + ".user");
-                try {
-                    // 파일 생성
-                    Path newFilePath = Files.createFile(filePath);
+                // 유저 정보 파일 생성
+                saveUser(currentPath, name, user);
 
-                    // 파일 쓰기
-                    Files.write(newFilePath, user.toString().getBytes());
-                    System.out.println("파일이 성공적으로 작성되었습니다.");
-
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
                 break;
+
             case 2:
-                try {
-                    Stream<Path> userFiles = Files.walk(Paths.get("src/ch29_io_stream/ex_file/ex1_userFiles"));
+                // 유저 리스트 출력
+                printUserList(currentPath);
 
-                    userFiles.
-                            forEach(s -> System.out.println(s.getFileName()));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
                 break;
+
             default:
                 System.out.println("잘못 선택하셨습니다.");
         }
     }
 
+
+    // 메소드
+    private static void saveUser(String currentPath, String name, User user) {
+        // 파일 객체 생성
+        File file = new File(currentPath + name + ".user");
+
+        // 유저 정보 넣기 -> 파일 생성
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))){
+            bw.write(user.toString());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    private static void printUserList(String currentPath) {
+        // 파일 객체 생성 (파일의 경로를 이용하기 위해서)
+        File currentDir = new File(currentPath);
+
+        // 파일 객체 배열
+        File[] files = currentDir.listFiles();
+
+        // 배열 출력
+        for (File f : files) {
+            String fileName = f.getName();
+            if (fileName.endsWith(".user")) {
+                System.out.println(f.getName());
+            }
+        }
+    }
     static class User implements Serializable{
         private String name;
         private String email;

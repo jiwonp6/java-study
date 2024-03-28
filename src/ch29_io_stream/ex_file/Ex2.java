@@ -1,6 +1,6 @@
 package ch29_io_stream.ex_file;
 
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -66,27 +66,40 @@ public class Ex2 {
         int count = scanner.nextInt();
         scanner.nextLine();
 
-        int num = 0;
-        Path filePath = Paths.get("src/ch29_io_stream/ex_file/ex2_files");
-        try {
-            // 병합할 파일 생성
-            Path mergeFilePath = Files.createFile(filePath.resolve("merge"+num+".txt"));
+        String currentPath = "src/ch29_io_stream/ex_file/ex2_files/";
+
+        // 병합할 파일 쓰기
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(currentPath + "merged.txt"))) {
+
+            // 파일 경로 입력받기
             for (int i = 0; i < count; i++) {
                 System.out.println("파일 경로를 입력하세요:");
                 String fileName = scanner.nextLine();
-                Path searchFilePath = Paths.get(String.valueOf(filePath), fileName);
+                File file = new File(currentPath + fileName);
 
-                Stream<String> lines = Files.lines(searchFilePath);
-                Files.write(mergeFilePath, lines.toList());
-                //Files.write(mergeFilePath, "------".getBytes());
-                num++;
+                // 파일 읽기
+                try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+                    while (true) {
+                        String line = br.readLine();
+                        if (line == null) break;
+
+                        // 파일 읽은 라인마다 병합 파일에 쓰고 개행
+                        bw.write(line);
+                        bw.newLine();
+                    }
+
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+
+                bw.write("=================="); //구분선
+                bw.newLine();
             }
-        } catch (FileAlreadyExistsException e) {
-            System.out.println("파일이 이미존재합니다.");
+
+            System.out.println("파일 병합이 완료되었습니다.");
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
     }
 }
