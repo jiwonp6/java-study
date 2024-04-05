@@ -2,6 +2,7 @@ package ch26_lambda.ex;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Ex4 {
     /*
@@ -37,6 +38,10 @@ public class Ex4 {
         for (String language : languages) {
             System.out.println(language);
         }
+
+        // 3. Consumer 사용 : 내부 요소를 하나씩 반복하여 출력 for-each
+        Consumer consumer = System.out::println;
+        consumer.accept(languages);
 
     }
 }
